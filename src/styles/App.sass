@@ -1,0 +1,52 @@
+@import base.sass
+
+header
+	@extend %d-flex-r
+	justify-content: flex-start
+	padding: 0 40px
+	font-size: 2em
+	font-weight: 400
+	height: 12vh
+	width: 100%
+	background: $clr1
+	h3
+		color: #fff
+		animation-name: floating
+		animation-duration: 3s
+		animation-iteration-count: infinite
+		animation-timing-function: ease-in-out
+
+@keyframes floating
+	0%
+		transform: translate(0, 0px)
+	65%
+		transform: translate(0, 10px)
+	100%
+		transform: translate(0, 0px)
+
+.App
+	@extend %d-flex-c
+	background-repeat: no-repeat
+	background-position-y: -9vh
+	align-items: center
+
+.mainContainer
+	@extend %d-flex-c
+	min-height: 88vh
+	width: 100%
+	padding: 3vh 5vw
+
+.minicontainer,.avatarcontainer,.aboutuscontainer
+	@extend %d-flex-r
+	height: 400px
+.minicontainer
+	width: 70%
+	height: 400px
+.avatarcontainer
+	width: 30%
+	background-size: contain
+	background-repeat: no-repeat
+	background-position-y: center
+.aboutuscontainer
+	width: 70%
+	padding: 2%
