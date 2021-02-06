@@ -1,4 +1,11 @@
 @import base.sass
+@keyframes floating
+	0%
+		transform: translate(0, 0px)
+	65%
+		transform: translate(0, 10px)
+	100%
+		transform: translate(0, 0px)
 
 header
 	@extend %d-flex-r
@@ -11,18 +18,8 @@ header
 	background: $clr1
 	h3
 		color: #fff
-		animation-name: floating
-		animation-duration: 3s
-		animation-iteration-count: infinite
-		animation-timing-function: ease-in-out
 
-@keyframes floating
-	0%
-		transform: translate(0, 0px)
-	65%
-		transform: translate(0, 10px)
-	100%
-		transform: translate(0, 0px)
+
 
 .App
 	@extend %d-flex-c
@@ -47,6 +44,10 @@ header
 	background-size: contain
 	background-repeat: no-repeat
 	background-position-y: center
+	animation-name: floating
+	animation-duration: 3s
+	animation-iteration-count: infinite
+	animation-timing-function: ease-in-out
 .aboutuscontainer
 	width: 70%
 	padding: 2%
