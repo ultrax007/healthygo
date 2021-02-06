@@ -6,7 +6,7 @@ import avatar from "../assets/about.svg";
 function App() {
   return (
    <div className="App" style={{ backgroundImage: `url(${background})` }}>
-      <header className="App-header"><h3>HealthyGo Multitrade</h3></header>
+      <header className="App-header"><h3>Healthy Go Multitrade LLP</h3></header>
 			<div className="mainContainer" >
 				<div className="minicontainer">
 					<div className="avatarcontainer" style={{ backgroundImage: `url(${avatar})` }}></div>
